@@ -65,4 +65,4 @@ Job Seekers looking for a simple way to create a general cover letter.
 
 ## Link to Project
 
-[Live Page]()
+[Live Page](https://cover-letter-writer.vercel.app/)

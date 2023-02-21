@@ -59,10 +59,6 @@ Job Seekers looking for a simple way to create a general cover letter.
 ![Create Page](https://i.imgur.com/Rtmgj1l.png)
 ![Index Page](https://i.imgur.com/KUGoUkl.png)
 
-### Mobile
-
-![Mobile Designs]()
-
 ## Link to Project
 
 [Live Page](https://cover-letter-writer.vercel.app/)

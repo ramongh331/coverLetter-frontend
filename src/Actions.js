@@ -65,7 +65,7 @@ export const updateAction = async ({request, params}) => {
     return redirect(`/coverletters/${id}`)
 }
 
-export const deleteAction = async ({request, params}) => {
+export const deleteAction = async ({params}) => {
     // get the cover letters id
     const id = params.id
 
@@ -75,5 +75,5 @@ export const deleteAction = async ({request, params}) => {
     })
 
     // redirect back to the index page
-    return redirect("/")
+    return redirect(`/coverletters`)
 }

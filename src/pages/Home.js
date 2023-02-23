@@ -1,4 +1,3 @@
-import Header from "../components/Header";
 import { Link } from "react-router-dom";
 import HomeImg from '../images/happy-news.svg'
 
@@ -9,7 +8,6 @@ export default function Home() {
       w-full 
       h-screen
       flex flex-col items-center ">
-        <Header />
         <section className="max-sm:w-4/5 sm:w-3/5 xl:w-2/5 w-2/5
         h-full">
           <h2 className=" max-[280px]:text-2xl max-sm:text-3xl sm:text-4xl text-5xl

@@ -39,7 +39,7 @@ export default function Home() {
                 </div>
               </Link>
               <Link to="/coverletters">
-                <div className="bg-white border-2 border-black
+                <div className="bg-white border-2 border-purple-1000 text-purple-1000
                 w-40 max-sm:w-24 sm:w-32
                 h-11 max-sm:h-8 sm:h-9
                 text-2xl max-sm:text-sm sm:text-base

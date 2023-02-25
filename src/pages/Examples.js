@@ -29,8 +29,24 @@ function handleBackSlide(){
   return (
     <>
       <main className=" h-screen">
-          <Link className="absolute right-28 bottom-28" to="/coverletters/new">
-            <button className="bg-purple-1000 text-white w-16 h-16 rounded-full text-5xl font-bold ">+</button>
+          <Link className="bg-purple-1000 
+          absolute 
+          min-[280px]:w-10 2xl:w-16 
+          min-[280px]:h-7 2xl:h-16 
+          rounded-full 
+          min-[280px]:top-[20.1rem]
+          min-[280px]:left-[50%]
+          2xl:right-28 
+          2xl:bottom-28 
+          2xl:flex 
+          2xl:justify-center 
+          2xl:items-start" 
+          to="/coverletters/new">
+            <button className=" text-white 
+            max-[280px]:mt-0 2xl:mt-[5px] 
+            max-[280px]:text-base 2xl:text-5xl 
+            font-bold">
+              +</button>
           </Link>
           <section className="bg-purple-50 w-full h-72 flex justify-evenly items-center overflow-hidden ">
               <h2 className="text-5xl">Look at all your well written Cover Letters!</h2>
@@ -55,10 +71,10 @@ function handleBackSlide(){
               ))}
               </section>
               <div className="bg-white opacity-50 absolute w-28 h-full right-0 top-0"></div>
-              <div className="absolute text-9xl right-2 top-24" onClick={handleNextSlide}> &gt; </div>
+              <div className="absolute text-9xl right-2 top-24 cursor-pointer" onClick={handleNextSlide}> &gt; </div>
             {imgsInView === 0 ? "" : <>
             <div className="bg-white opacity-50 absolute w-28 h-full top-0"></div>
-            <div className="absolute text-9xl left-2 top-24" onClick={handleBackSlide}>&lt;</div>
+            <div className="absolute text-9xl left-2 top-24 cursor-pointer" onClick={handleBackSlide}>&lt;</div>
             </>}      
           </section>
       </main>

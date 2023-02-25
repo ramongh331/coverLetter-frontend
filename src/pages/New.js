@@ -9,15 +9,14 @@ export default function New() {
         <section className="flex flex-col items-center">
             <h2 className="max-[280px]:text-3xl max-sm:text-4xl text-5xl 
             font-bold
-            text-white 
-            mt-5
+            my-1
             mx-3">Make a New Cover Letter</h2>
             <div className="max-[280px]:flex-col max-sm:flex-col max-[875px]:flex-col flex
             justify-evenly 
             max-[280px]:items-center max-sm:items-center max-[875px]:items-center
             w-full 
             h-4/5 
-            max-[280px]:mt-0 mt-10">
+            max-[280px]:mt-0 mt-5">
               
               {/* Form */}
               <Form
@@ -101,7 +100,8 @@ export default function New() {
               </Form>
               {/* Example Paper */}
               <section className="bg-white 
-              max-[280px]:w-11/12 max-sm:w-11/12 min-[430px]:max-w-[26rem]  w-[40rem] 
+              max-[280px]:w-11/12 max-sm:w-11/12 min-[430px]:max-w-[26rem] min-[977px]:max-w-[40rem] 
+              max-[280px]:h-fit h-[50rem]
               text-left 
               max-[280px]:text-sm max-sm:text-sm sm:text-base text-xl 
               p-5 
@@ -110,7 +110,7 @@ export default function New() {
               shadow-lg
               max-[280px]:mb-3 max-sm:mb-6 sm:mb-6 mb-6">
                 <p>
-                  Dear <span className="redText">[Hiring Manager]</span>,
+                  Dear <span className="redText">[Company]</span> Hiring Manager,
                 </p>
                 <p>
                   I am writing to express my interest in the{" "}

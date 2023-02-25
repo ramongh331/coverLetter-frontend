@@ -37,60 +37,61 @@ export default function New() {
                     className="max-sm:max-w-[18rem] sm:max-w-[18rem] w-full 
                     h-8 
                     rounded-md 
-                    p-1"
+                    p-1
+                    border-2 border-purple-1000"
                     type="text"
                     name="name"
                     placeholder="Your Name"
                   />
                   <input
-                    className="max-sm:max-w-[18rem] sm:max-w-[18rem] w-full h-8 rounded-md p-1"
+                    className="max-sm:max-w-[18rem] sm:max-w-[18rem] w-full h-8 rounded-md p-1 border-2 border-purple-1000"
                     type="text"
                     name="position"
                     placeholder="Job Position"
                   />
                   <input
-                    className="max-sm:max-w-[18rem] sm:max-w-[18rem] w-full h-8 rounded-md p-1"
+                    className="max-sm:max-w-[18rem] sm:max-w-[18rem] w-full h-8 rounded-md p-1 border-2 border-purple-1000"
                     type="text"
                     name="date"
                     placeholder="Today's Date"
                   />
                   <input
-                    className="max-sm:max-w-[18rem] sm:max-w-[18rem] w-full h-8 rounded-md p-1"
+                    className="max-sm:max-w-[18rem] sm:max-w-[18rem] w-full h-8 rounded-md p-1 border-2 border-purple-1000"
                     type="text"
                     name="company"
                     placeholder="Company's Name"
                   />
                   <input
-                    className="max-sm:max-w-[18rem] sm:max-w-[18rem] w-full h-8 rounded-md p-1"
+                    className="max-sm:max-w-[18rem] sm:max-w-[18rem] w-full h-8 rounded-md p-1 border-2 border-purple-1000"
                     type="text"
                     name="skill"
                     placeholder="Relevant Skills/Experience"
                   />
                   <input
-                    className="max-sm:max-w-[18rem] sm:max-w-[18rem] w-full h-8 rounded-md p-1"
+                    className="max-sm:max-w-[18rem] sm:max-w-[18rem] w-full h-8 rounded-md p-1 border-2 border-purple-1000"
                     type="text"
                     name="yoe"
                     placeholder="Years of Experience"
                   />
                   <input
-                    className="max-sm:max-w-[18rem] sm:max-w-[18rem] w-full h-8 rounded-md p-1"
+                    className="max-sm:max-w-[18rem] sm:max-w-[18rem] w-full h-8 rounded-md p-1 border-2 border-purple-1000"
                     type="text"
                     name="expertise"
                     placeholder="Relevant Expertise"
                   />
                   <input
-                    className="max-sm:max-w-[18rem] sm:max-w-[18rem] w-full h-8 rounded-md p-1"
+                    className="max-sm:max-w-[18rem] sm:max-w-[18rem] w-full h-8 rounded-md p-1 border-2 border-purple-1000"
                     type="text"
                     name="passion"
                     placeholder="Relevant Field/Industry"
                   />
                   <input
-                    className="max-sm:max-w-[18rem] sm:max-w-[18rem] w-full h-8 rounded-md p-1"
+                    className="max-sm:max-w-[18rem] sm:max-w-[18rem] w-full h-8 rounded-md p-1 border-2 border-purple-1000"
                     type="text"
                     name="products"
                     placeholder="Company's Products/Services"
                   />
-                  <button className="bg-orange-1000 
+                  <button className="bg-purple-1000 
                   max-sm:max-w-[13rem] sm:max-w-[13rem] w-11/12 
                   font-bold 
                   text-white text-md 
@@ -114,9 +115,8 @@ export default function New() {
                 <p>
                   I am writing to express my interest in the{" "}
                   <span className="redText">[Position]</span> role at{" "}
-                  <span className="redText">[Company]</span>. As an experienced{" "}
-                  <span className="redText">[your profession or job title]</span>, I
-                  am excited to apply my{" "}
+                  <span className="redText">[Company]</span>. I
+                  am excited to apply my skills in{" "}
                   <span className="redText">[relevant skills or experience]</span>{" "}
                   to make a valuable contribution to your team.
                 </p>
@@ -124,7 +124,7 @@ export default function New() {
                   In my <span className="redText">[Number of Years]</span> years of
                   experience, I have honed my skills in{" "}
                   <span className="redText">[relevant skills or technologies]</span>{" "}
-                  and worked on a variety of projects that have enabled meto develop{" "}
+                  and worked on a variety of projects that have enabled me to develop{" "}
                   <span className="redText">[relevant expertise]</span>. I have also
                   collaborated with cross-functional teams and stakeholders to
                   deliver projects on time and within budget.
@@ -136,7 +136,7 @@ export default function New() {
                   and trends. I am confident that my skills in{" "}
                   <span className="redText">[relevant skills or experience]</span>{" "}
                   and passion for{" "}
-                  <span className="redText">[relevant field or industry]</span>
+                  <span className="redText">[relevant field or industry]</span>{" "}
                   make me an ideal candidate for the{" "}
                   <span className="redText">[Position]</span> role at{" "}
                   <span className="redText">[Company]</span>.

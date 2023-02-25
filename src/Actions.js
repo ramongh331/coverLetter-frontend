@@ -29,7 +29,7 @@ export const createAction = async ({request}) => {
     })
 
     // redirect back to the index page
-    return redirect("/")
+    return redirect("/coverletters")
 }
 
 export const updateAction = async ({request, params}) => {

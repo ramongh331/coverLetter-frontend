@@ -34,7 +34,7 @@ function handleBackSlide(){
           min-[280px]:w-10 2xl:w-16 
           min-[280px]:h-7 2xl:h-16 
           rounded-full 
-          min-[280px]:top-[20.1rem]
+          min-[280px]:top-[20.1rem] sm:top-[22rem]
           min-[280px]:left-[50%]
           2xl:right-28 
           2xl:bottom-28 
@@ -48,9 +48,19 @@ function handleBackSlide(){
             font-bold">
               +</button>
           </Link>
-          <section className="bg-purple-50 w-full h-72 flex justify-evenly items-center overflow-hidden ">
-              <h2 className="text-5xl">Look at all your well written Cover Letters!</h2>
-              <img className="h-96 mt-7" src="https://i.imgur.com/jMqSXdI.png" alt="two purple pencils in the shape of the letters C and L"/>
+          {/* Under Header */}
+          <section className="bg-purple-50 
+          w-full 
+          h-72 
+          min-[280px]:flex 2xl:flex
+          min-[280px]:flex-col 
+          min-[280px]:justify-center 2xl:justify-evenly 
+          items-center 
+          overflow-hidden ">
+              <h2 className="min-[280px]:text-2xl 2xl:text-5xl
+              ">Look at all your well written Cover Letters!</h2>
+              <img className="min-[280px]:h-48 2xl:h-96
+               mt-7" src="https://i.imgur.com/jMqSXdI.png" alt="two purple pencils in the shape of the letters C and L"/>
           </section>
           <section className="overflow-hidden relative h-80 mt-10">
               <section style={moveStyle} className="w-fit h-full flex items-center ease-in-out duration-300">

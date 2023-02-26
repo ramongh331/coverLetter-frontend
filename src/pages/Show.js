@@ -1,13 +1,26 @@
-import { useLoaderData } from "react-router-dom";
-import { Form, Link } from "react-router-dom";
+import { Form, Link, useLoaderData } from "react-router-dom";
+import { useState } from "react";
 
 export default function Show() {
   const letter = useLoaderData();
 
+  const [openClose, setOpenClose] = useState("translate-x-[-100%]")
+
+  const handleClose = () => {
+    setOpenClose("translate-x-[-100%]")
+  }
+  const handleOpen = () => {
+    setOpenClose("translate-x-[0%]")
+  }
+
+  
+
   return (
     <>
-      <main className="grid grid-cols-12 h-screen">
-        <aside className="bg-purple-1000 flex flex-col col-span-3 h-full">
+      <main className="flex justify-between w-screen h-screen relative">
+        <aside className={`bg-purple-1000 w-[30rem] flex flex-col h-full absolute z-10 ${openClose} ease-in-out duration-300`}>
+          <h2 className="text-white text-3xl my-5 font-semibold">Update Cover Letter</h2>
+          <button onClick={handleClose} className="font-bold text-white text-2xl absolute right-2">X</button>
           <Form
             className="flex flex-col h-full items-center"
             action={`/coverletters/update/${letter.id}`}
@@ -81,14 +94,25 @@ export default function Show() {
             </button>
           </Form>
         </aside>
-        <section className="bg-purple-50 col-span-9 p-5 shadow-[inset_1px_.5px_20px_rgba(0,0,0,0.4)] relative">
-          <Form className="bg-red-500 text-white font-semibold absolute p-2 rounded-lg" action={`/coverletters/delete/${letter.id}`} method="post">
+        <section className="bg-purple-50 w-full p-5 shadow-[inset_1px_.5px_20px_rgba(0,0,0,0.4)] relative">
+          <button onClick={handleOpen} className="bg-white rounded-lg w-36 p-2 absolute left-5 font-semibold border-2 border-purple-1000 text-purple-1000">Update</button>
+          <Form className="bg-red-500 text-white font-semibold absolute p-2 rounded-lg right-5" action={`/coverletters/delete/${letter.id}`} method="post">
             <button>Delete Todo</button>
           </Form>
           <Link className="bg-purple-1000 text-white p-2 rounded-lg" to="/coverletters">
             <button>Go Back</button>
           </Link>
-          <article className="bg-white w-6/12 h-[80vh] mx-auto text-left flex flex-col justify-evenly p-5 mt-5 shadow-md">
+          <article className="bg-white 
+          lg:w-[45rem] 
+          lg:h-[55rem] 
+          mx-auto 
+          text-left 
+          flex flex-col 
+          justify-evenly 
+          p-5 
+          mt-5 
+          shadow-md
+          ">
             <p>Dear {letter.company} Hiring Manager,</p>
             <p>
               I am writing to express my interest in the {letter.position} role

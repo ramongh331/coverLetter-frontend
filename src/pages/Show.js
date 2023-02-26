@@ -17,12 +17,24 @@ export default function Show() {
 
   return (
     <>
-      <main className="flex justify-between w-screen h-screen relative">
-        <aside className={`bg-purple-1000 w-[30rem] flex flex-col h-full absolute z-10 ${openClose} ease-in-out duration-300`}>
-          <h2 className="text-white text-3xl my-5 font-semibold">Update Cover Letter</h2>
+      <main className="flex 
+      justify-between 
+      w-screen 
+      min-[280px]:h-full sm:h-screen h-screen 
+      relative">
+        <aside className={`bg-purple-1000 
+        min-[280px]:w-full sm:max-w-[30rem] lg:w-[30rem] 
+        flex flex-col 
+        h-full 
+        absolute 
+        z-10 
+        ${openClose} ease-in-out duration-300`}>
+          <h2 className="text-white 
+          min-[280px]:text-2xl text-3xl 
+          my-5 font-semibold">Update Cover Letter</h2>
           <button onClick={handleClose} className="font-bold text-white text-2xl absolute right-2">X</button>
           <Form
-            className="flex flex-col h-full items-center"
+            className="flex flex-col w-full h-full items-center"
             action={`/coverletters/update/${letter.id}`}
             method="post"
           >
@@ -89,22 +101,61 @@ export default function Show() {
               placeholder="Company's Products/Services"
               defaultValue={letter.products}
             />
-            <button className="bg-white text-purple-1000 font-semibold w-44 h-8 my-2 rounded">
+            <button className="bg-white text-purple-1000 font-semibold w-44 h-8 my-2 rounded
+            min-[280px]:text-sm lg:text-base">
               Update Letter
             </button>
           </Form>
         </aside>
-        <section className="bg-purple-50 w-full p-5 shadow-[inset_1px_.5px_20px_rgba(0,0,0,0.4)] relative">
-          <button onClick={handleOpen} className="bg-white rounded-lg w-36 p-2 absolute left-5 font-semibold border-2 border-purple-1000 text-purple-1000">Update</button>
-          <Form className="bg-red-500 text-white font-semibold absolute p-2 rounded-lg right-5" action={`/coverletters/delete/${letter.id}`} method="post">
-            <button>Delete Todo</button>
-          </Form>
-          <Link className="bg-purple-1000 text-white p-2 rounded-lg" to="/coverletters">
-            <button>Go Back</button>
-          </Link>
+        
+        <section className="bg-purple-50 
+        w-full
+        p-5 
+        shadow-[inset_1px_.5px_20px_rgba(0,0,0,0.4)] 
+        relative">
+          
+          <section className="flex justify-between">
+
+            {/* Update Button */}
+            <button onClick={handleOpen} className="bg-white
+            rounded-lg
+            p-2
+            min-[280px]:w-16 lg:w-36
+           
+            left-5
+            font-semibold
+            min-[280px]:text-xs lg:text-base
+            border-2
+            border-purple-1000 text-purple-1000">Update</button>
+            
+            {/* Back Button */}
+            <Link className="bg-purple-1000 
+            text-white
+            min-[280px]:text-xs lg:text-base 
+            p-2 
+            rounded-lg" to="/coverletters">
+              <button>Go Back</button>
+            </Link>
+
+            {/* Delete Button */}
+            <Form className="bg-red-500
+            text-white
+            min-[280px]:text-xs lg:text-base
+            font-semibold
+            min-[280px]:w-16 lg:w-36
+            p-2
+            rounded-lg
+            top-5
+            right-5" action={`/coverletters/delete/${letter.id}`} method="post">
+              <button>Delete</button>
+            </Form>
+          </section>
+
+          
+          {/* Cover Letter */}
           <article className="bg-white 
-          lg:w-[45rem] 
-          lg:h-[55rem] 
+          min-[280px]:w-[98%] md:w-[35rem] lg:w-[45rem] 
+          min-[280px]:h-[45rem] lg:h-[55rem] 
           mx-auto 
           text-left 
           flex flex-col 
@@ -112,6 +163,7 @@ export default function Show() {
           p-5 
           mt-5 
           shadow-md
+          min-[280px]:text-[10px] md:text-sm lg:text-base
           ">
             <p>Dear {letter.company} Hiring Manager,</p>
             <p>

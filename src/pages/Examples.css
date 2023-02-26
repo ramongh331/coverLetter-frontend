@@ -1,0 +1,47 @@
+.underHeader {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 18rem;
+}
+
+.underHeaderText {
+  font-size: 50px;
+}
+
+.clImg {
+  height: 24rem;
+  margin-top: 2.5rem;
+}
+
+@media screen and (min-width: 280px) and (max-width: 639px) {
+  .underHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .underHeaderText {
+    font-size: 30px;
+  }
+
+  .clImg {
+    height: 10rem;
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 640px) {
+  .underHeader {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .underHeaderText {
+    font-size: 30px;
+  }
+
+  .clImg {
+    height: 15rem;
+    margin-top: 0;
+  }
+}

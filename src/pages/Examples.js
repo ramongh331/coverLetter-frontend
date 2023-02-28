@@ -5,8 +5,6 @@ import './Examples.css'
 export default function Examples() {
   const letters = useLoaderData();
 
-//   document.URL === "http://localhost:3000/coverletters" ? document.querySelector("body").style.backgroundColor = "white" : null;
-
 const [imgsInView, setImgsInView] = useState(0)
 const length = letters.length
 const show = 6

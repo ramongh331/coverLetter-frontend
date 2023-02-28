@@ -130,9 +130,7 @@ export default function New() {
                   deliver projects on time and within budget.
                 </p>
                 <p>
-                  Additionally, I have a passion for{" "}
-                  <span className="redText">[relevant field or industry]</span> and
-                  am committed to staying up-to-date with the latest developments
+                  Additionally, I am committed to staying up-to-date with the latest developments
                   and trends. I am confident that my skills in{" "}
                   <span className="redText">[relevant skills or experience]</span>{" "}
                   and passion for{" "}
